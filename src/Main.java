@@ -1,29 +1,70 @@
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.HashSet;
+//
+//import java.util.Scanner;
+//
+////WAP TO FIND THE LARGEST ELEMENT FROM THE ARRAY IN JAVA.
+////TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+//// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//public class Main {
+//    public static void main(String[] args) {
+//
+////        System.out.printf("Hello and welcome!");
+//        Scanner scanner = new Scanner(System.in);
+//        int value = scanner.nextInt();
+//        int []array = {1,2,3,45,65};
+//
+//        int x = 0;
+//
+//        for(int i=0; i<array.length; i++)
+//        {
+//            System.out.print(array[i]);
+//        }
+//
+//        for(int i=0; i<array.length; i++)
+//        {
+//            for(int j=0; i<array.length; i++)
+//            {
+//                if(array[i] < array[j])
+//                {
+//                    x= array[i];
+//                    System.out.println("Max"+ x);
+//                }
+//            }
+//        }
+//
+//
+//
+//
+//    }
+//}
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//
+//WAP TO FIND THE LARGEST ELEMENT FROM THE ARRAY IN JAVA.
+
+//WAP TO FIND THE SUM OF PRIME NUMBERS FROM 1 TO N.
+//WAP TO FIND THE SUM OF EVEN NUMBERS FROM 1 TO N USING RECURSION.
+//WAP TO CREATE PATTERN AS MENTIONED BELOW IMAGE.
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-//        for (int i = 1; i <= 5; i++) {
-//            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-//            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-//            System.out.println("i = " + i*i);
-//        }
+        int[] array = {2,3,5,6,78,8};
 
-        ArrayList<Integer> arrayList = new ArrayList();
-        HashSet hashSet = new HashSet();
-        HashSet.newHashSet(24);
-
-        System.out.println(hashSet);
-        arrayList.add(45);
-
-        System.out.println(arrayList);
-//        HashMap<Inter>hashMap =new HashMap();
+        int x=0;
+        for(int i=0; i<array.length; i++)
+        {
+            for(int j=i+1; j<array.length; j++)
+            {
+                if(array[i]>array[j])
+                {
+                    x = array[i];
+                }
+            }
+        }
+        System.out.println("Max Number is " + x);
     }
 }
