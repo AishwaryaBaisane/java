@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ton {
+public class one_to_n {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
