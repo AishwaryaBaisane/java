@@ -29,6 +29,8 @@ public class Pattern {
                     System.out.print(" ");
                 }
             }
+
+
             System.out.print("\n");
         }
     }
